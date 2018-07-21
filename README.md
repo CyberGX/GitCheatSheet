@@ -5,7 +5,9 @@ Persian Git Commands and Best Practices Cheat Sheet
 <div dir="rtl" align="right" >
  مشاهده و تغییر نام شخص به صورت سراسری جهت استفاده در پروژه های گیت :
 </div>
-git config —global user.name
+```console
+foo@bar:~$ git config —global user.name
+```
 
 <div dir="rtl" align="right" >
  مشاهده و تغییر ایمیل شخص به صورت سراسری جهت استفاده در پروژه های گیت :
