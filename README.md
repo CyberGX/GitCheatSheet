@@ -2,172 +2,172 @@
 Persian Git Commands and Best Practices Cheat Sheet
 
 # General Commands
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
  مشاهده و تغییر نام شخص به صورت سراسری جهت استفاده در پروژه های گیت :
-</font></div>
+</div>
 git config —global user.name
 
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
  مشاهده و تغییر ایمیل شخص به صورت سراسری جهت استفاده در پروژه های گیت :
-</font></div>
+</div>
 git config —global user.email
 
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 افزودن همه فایل ها به Stage :
-</font></div>
+</div>
 git add -A
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 حذف فایل از Stage :
-</font></div>
+</div>
 git reset $FILENAME
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 کامیت کردن فایل های درون Stage :
-</font></div>
+</div>
 git commit -m “Commit Message"
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 برگرداندن یک فایل به آخرین Commit :
-</font></div>
+</div>
 git checkout — $FILENAME
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 بررسی تغییرات فایل های فعلی با آخرین Commit :
-</font></div>
+</div>
 git diff head
 
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 بررسی تغیررات فایل های فعلی با فایل های داخل استیج :
-</font></div>
+</div>
 git diff —staged
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 فایل را هم از گیت و هم از روی هارد حذف می کند :
-</font></div>
+</div>
 git rm $FILENAME
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 تغییرات کامیت مورد نظر : 
-</font></div>
+</div>
 git show $COMMITID 
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 پیدا کردن مقصر ایجاد یک باگ که کل تغییرات یک فایل را بهمراه نام افراد تغییر دهنده لیست می کند :
-</font></div>
+</div>
 git blame $FILENAME
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 کلیه تغییرات روی یک خط خاص را لیست می کند :
-</font></div>
+</div>
 git blame $FILENAME -L8
 
 # Branches
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 لیست Branch ها :
-</font></div>
+</div>
 git branch
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 ساخت Branch جدید :
-</font></div>
+</div>
 git branch $BRANCHNAME
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 حذف یک Branch :
-</font></div>
+</div>
 git branch -d $BRANCHNAME
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 سویچ به Branch دیگر :
-</font></div>
+</div>
 git checkout $BRANCHNAME
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 Merge برنچ فعلی با برنچ دیگر :
-</font></div>
+</div>
 git merge $BRANCHNAME
 
 # Remote Projects
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 دانلود یک پروژه از گیت :
-</font></div>
+</div>
 git clone URL
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 دانلود تغیررات از وب به برنچ مستر :
-</font></div>
+</div>
 git pull origin master
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 آپلود تغییرات روی گیت :
-</font></div>
+</div>
 git push -u origin master
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 لیست سرور های خارجی قابل ارسال و دریافت تغییرات پروژه :
-</font></div>
+</div>
 git remote -v
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 افزودن یک سرور گیت به نام origin برای ارسال و دریافت تغییرات :
-</font></div>
+</div>
 gir remote add origin $URL
 
 # Tags
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 نمایش لیست تگ ها :
-</font></div>
+</div>
 git tag
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 ایجاد یک تگ جدید بر روی آخرین کامیت پروژه :
-</font></div>
+</div>
 git tag -a v2.0 -m “Second Version”
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 ایجاد تگ جدید روی کامیت مورد نظر :
-</font></div>
+</div>
 git tag -a v2.0  COMMITID -m “Second Version”
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 نمایش کامیت تگ مورد نظر :
-</font></div>
+</div>
 git show v2.0
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 ارسال تگ ها به سرور گیت چون به صورت پیشفرض تگ ها ارسال نمی شوند :
-</font></div>
+</div>
 git push origin —tags
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 بردن پروژه به یک تگ مشخص : 
-</font></div>
+</div>
 git checkout v2.0
 
 # Bisect
 
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 شروع عملیات پیدا کردن کامیتی که باعث باگ شده :
-</font></div>
+</div>
 git bisect start
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 وضعیت فعلی دارای باگ می باشد :
-</font></div>
+</div>
 git bisect bad
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 وضعیت در کامیت مورد نظر بدون باگ می باشد :
-</font></div>
+</div>
 git bisect good COMMITID
 
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 در قدم بعد روی کامیت ها جلو عقب می رود تا ما بعد از چک کردن بوسیله دستورات زیر بهش بگیم که باگ دارد یا خیر تا کامیت باعث باگ پیدا شود :
-</font></div>
+</div>
 git bisect bad
 git bisect good
 
 # Signing with GPG
 
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 نمایش کلید ها :
-</font></div>
+</div>
 gpg —list-keys
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 ساخت کلید جدید :
-</font></div>
+</div>
 gpg —gen-key
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 نمایش لیست کلید ها :
-</font></div>
+</div>
 gpg —list-secret-keys —keyid-format LONG
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 ثبت کلید خصوصی برای امضای تغییرات بر روی گیت :
-</font></div>
+</div>
 git config —global user.signingkey $SECRETKEY
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 امضای یک تگ :
-</font></div>
+</div>
 git tag -s v2.0 -m “Second Tag”
-<div dir="rtl" align="right" ><font face="tahoma" size="2">
+<div dir="rtl" align="right" >
 امضای یک کامیت :
-</font></div>
+</div>
 git commit -S -m “Commit Message"
