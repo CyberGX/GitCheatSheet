@@ -254,7 +254,7 @@ CyberGx@github:~$ git bisect good
 </div>
 
 ```bash
-CyberGx@github:~$ git gpg —list-keys
+CyberGx@github:~$ gpg —list-keys
 ```
 
 <div dir="rtl" align="right" >
@@ -262,7 +262,7 @@ CyberGx@github:~$ git gpg —list-keys
 </div>
 
 ```bash
-CyberGx@github:~$ git gpg —gen-key
+CyberGx@github:~$ gpg —gen-key
 ```
 
 <div dir="rtl" align="right" >
@@ -270,7 +270,7 @@ CyberGx@github:~$ git gpg —gen-key
 </div>
 
 ```bash
-CyberGx@github:~$ git gpg —list-secret-keys —keyid-format LONG
+CyberGx@github:~$ gpg —list-secret-keys —keyid-format LONG
 ```
 
 <div dir="rtl" align="right" >
