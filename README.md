@@ -42,6 +42,14 @@ CyberGx@github:~$ git commit -m "Commit Message"
 ```
 
 <div dir="rtl" align="right" >
+تغییر پیغام آخرین commit :
+</div>
+
+```bash
+CyberGx@github:~$ git commit --amend
+```
+
+<div dir="rtl" align="right" >
 برگرداندن یک فایل به آخرین Commit :
 </div>
 
